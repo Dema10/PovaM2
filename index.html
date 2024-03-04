@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Algoritmo di ricerca lavoro</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div>
+                <!-- titolo -->
+                <h1>Trova Lavoro!</h1>
+            </div>
+            <div>
+                <ul class="icone">
+                    <li id="user"><i class="fa-solid fa-user"></i></li>
+                    <li><i class="fa-solid fa-bars"></i></li>
+                </ul>
+            </div>
+            <div class="tendina nascondi" id="tendina">
+                <button class="login">ACCEDI</button>
+                <button class="login">REGISTRATI</button>
+            </div>
+        </nav>
+    </header>
+    <div class="contenitore">
+        <!-- Blocco input di ricerca -->
+        <div class="contenitore-campi">
+            <!-- Contenitore campo lavoro -->
+            <div class="campo-conteiner">
+                <label for="lavoro">Lavoro</label>
+                <input type="text" class="controllo-campo" id="lavoro" placeholder="Inserisci il lavoro che cerchi">
+            </div>
+            <!-- Contenitore campo località -->
+            <div class="campo-conteiner">
+                <label for="localita">Localita</label>
+                <input type="text" class="controllo-campo" id="localita" placeholder="Inserisci dove cerchi il lavoro">
+            </div>
+            <div class="bottoni">
+                <button id="submit">Cerca</button>
+                <button id="delete">Canc</button>
+            </div>
+        </div>
+        <!-- creo un div con un ul e un paragrafo che serviranno dopo per mandare a schermo i risultati -->
+        <div class="risultati">
+            <ul id="risultatoValori"></ul>
+            <p id="numPosizioni"></p>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/e32e58286a.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

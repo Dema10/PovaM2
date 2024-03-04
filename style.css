@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Comfortaa", sans-serif;
+    background-image: url(assets/sfondoMac.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    border-bottom: 2px solid #b50eaf;
+    padding: 10px;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    color: #b50eaf;
+    margin: 10px;
+    font-size: 40px;
+}
+
+.icone {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 10px;
+}
+
+.icone li {
+    padding: 0 15px;
+    color: #b50eaf;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.tendina {
+    position: absolute;
+    right: 45px;
+    top: 65px;
+    width: 100px;
+    height: 100px;
+}
+
+.login {
+    padding: 3px;
+    margin-top: 15px;
+    border-radius: 15px;
+    color: black;
+    background-color: #b50eaf;
+    border: 1px solid #b50eaf;
+    cursor: pointer;
+}
+
+.nascondi {
+    display: none;
+}
+
+.contenitore {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contenitore-campi {
+    width: 320px;
+    height: 270px;
+    background-image: url(assets/mac.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    padding-top: 50px;
+    margin-top: 50px;
+    border-radius: 15px;
+}
+
+.contenitore-campi:hover {
+    box-shadow: 0 0 10px 10px purple;
+    transform: scale(1.2);
+}
+
+.campo-conteiner {
+    padding: 5px 5px 10px 5px;
+}
+
+.controllo-campo {
+    width: 175px;
+    border: 1px solid #724aec;
+    padding: 2px;
+}
+
+.campo-conteiner label {
+    color: #724aec;
+}
+
+.bottoni {
+    padding-top: 8px;
+}
+
+#submit {
+    padding: 3px;
+    background-color: lightgreen;
+    border-radius: 15px;
+    cursor: pointer;
+    border: 1px solid lightgreen;
+}
+
+#delete {
+    padding: 3px 5px 3px 5px;
+    background-color: lightcoral;
+    border-radius: 15px;
+    cursor: pointer;
+    border: 1px solid lightcoral;
+}
+
+.risultati {
+    width: 500px;
+    height: 300px;
+    border: 1px solid #b50eaf;
+    background-color: #b50eaf;
+    border-radius: 15px;
+    margin-top: 35px;
+    padding: 5px 0;
+    overflow-y: scroll;
+}
+
+.risultati ul {
+    padding-left: 25px;
+}
+
+#numPosizioni {
+    padding: 3px 0 0 25px;
+}
